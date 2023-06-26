@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dhoor Converter</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Dhoor Converter</h1>
+    <div>
+      <h2>1 Decimal to Dhoor</h2>
+      <label for="laggi-input-d">Laggi kitne hanth ka:</label>
+      <input type="number" id="laggi-input-d" placeholder="Enter laggi value">
+      <button onclick="convertToDhoor()">Convert</button>
+      <p id="result-d"></p>
+    </div>
+    <div>
+      <h2>Dhoor to Decimal</h2>
+      <label for="dhoor-input">Dhoor:</label>
+      <input type="number" id="dhoor-input" placeholder="Enter Dhoor value">
+      <label for="laggi-input-d2">Laggi kitne hanth ka:</label>
+      <input type="number" id="laggi-input-d2" placeholder="Enter laggi value">
+      <button onclick="convertToDecimal()">Convert</button>
+      <p id="result-d2"></p>
+    </div>
+    <p class="copyright">
+      &copy; <span id="year"></span> by Sajid Ahmad. All rights reserved.
+    </p>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    // Set the current year dynamically
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
